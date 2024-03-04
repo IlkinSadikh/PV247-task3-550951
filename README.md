@@ -17,6 +17,7 @@ There are attached screenshots of the final solution you need to achieve below.
 - Only the left sidebar and main content are present on a tablet - the right sidebar is hidden.
 - Only the main content is shown on mobile - both the left and right sidebar are hidden.
 - The top navigation is also collapsed into a hamburger menu on both tablet and mobile. Clicking on the menu **doesn't** show any dropdown or anything else. The page is supposed to be completely non-interactive.
+- The top navigation must be always visible even when scrolling down the page. The same applies for the left and right sidebar - both must stay visible while scrolling. Moreover, the left sidebar must be scrollable as well. See attached screenshots for reference.
 - Basic accessibility principles must be followed, especially using HTML5 semantic tags.
 - Your solution does not need to have the same dimensions per pixel, spacing, etc., as the attached screenshot but must have the same layout of elements.
 - Decompose your solution into components, which you keep in the `./src/components` directory. Use accurate naming.
@@ -64,6 +65,10 @@ There are attached screenshots of the final solution you need to achieve below.
 ### Desktop
 
 ![result](desired-result.png)
+
+### Desktop scrolled down
+
+![result](desired-result-scrolled.png)
 
 ### Tablet
 
