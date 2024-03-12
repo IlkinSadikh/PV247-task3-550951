@@ -1,26 +1,24 @@
-import { AlertTriangle } from 'lucide-react';
+import React from 'react';
+import LeftSidebar from "../components/LeftSidebar";
+import MainContent from "../components/MainContent";
+import RightSidebar from "../components/RightSidebar";
+import TopNavigation from "@/components/TopNavigation";
 
-import { ExampleComponent } from '@/components/example-component';
-
-/**
- * TODO: Implement your solution here
- *
- * Do not include whole solution in this file, decompose it into smaller components,
- * which you can put in `src/components`.
- */
-const HomePage = () => (
-	<div>
-		<div>header</div>
-
-		<div>left side bar</div>
-		<div>main content</div>
-		<div>right side bar</div>
-
-		<div className="mt-4 flex items-center text-xl">
-			<AlertTriangle size="48" className="mr-4" />
-			<ExampleComponent />
-		</div>
-	</div>
-);
+const HomePage = () => {
+ return (
+     <div className="flex flex-col min-h-screen">
+         <TopNavigation/>
+         <div className="flex flex-1 pt-14 px-8 justify-between">
+             <div className="hidden md:block">
+                 <LeftSidebar/>
+             </div>
+             <MainContent/>
+             <div className="hidden lg:block">
+                 <RightSidebar/>
+             </div>
+         </div>
+     </div>
+ );
+};
 
 export default HomePage;
